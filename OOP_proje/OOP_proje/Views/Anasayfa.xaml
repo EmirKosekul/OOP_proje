@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP_proje.Views.Anasayfa">
+    <Shell.TitleView>
+        <Image Source="a101kapida.png" ></Image>
+    </Shell.TitleView> 
+    <ContentPage.Content>
+        <ScrollView HeightRequest="1000">
+            <StackLayout>
+                <StackLayout BackgroundColor="White" HeightRequest="250">
+                    <BoxView BackgroundColor="White" HeightRequest="10"></BoxView>
+                    <Label Text="    Merhaba" FontSize="26" FontAttributes="Bold"  TextColor="Black"></Label>
+                    <BoxView BackgroundColor="White" HeightRequest="5"></BoxView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="9*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="1" Text="Alışverişe hemen başlayabilmek için giriş yap. Yüzlerce ürün siparişin için seni bekliyor." FontSize="16" TextColor="Black"></Label>
+                    </Grid>
+                    <BoxView BackgroundColor="White" HeightRequest="25"></BoxView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                            <ColumnDefinition Width="5*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" Text="Giriş yap / Üye ol" FontAttributes="Bold" FontSize="18" TextTransform="None" BackgroundColor="#1AC4D7" TextColor="White" CornerRadius="10"></Button>
+                    </Grid>
+                </StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="1">
+                        <ImageButton  Source="domates.jpg" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Clicked="Domates_Clicked"></ImageButton>
+                        <ImageButton  Clicked="ImageButton_Clicked" WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                    </StackLayout>
+                    <StackLayout Grid.Column="2">
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+
+                    </StackLayout>
+                    <StackLayout Grid.Column="3">
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                        <ImageButton  WidthRequest="100" HeightRequest="100" BackgroundColor="White"></ImageButton>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="marketBtn" Icon="shopping_cart.png"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

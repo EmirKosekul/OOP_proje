@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP_proje.Views.Hesabim">
+    <Shell.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Padding="-50,0,0,0" Text="GİRİŞ YAP" FontSize="18"  TextColor="Black"></Label> 
+        </Grid>
+    </Shell.TitleView>
+    <ContentPage.Content>
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="9*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="1">
+                    <BoxView HeightRequest="15"></BoxView>
+                <Label Text="Merhaba," FontSize="26" FontAttributes="Bold"  TextColor="Black"></Label>
+                    <Label Text="Devam etmek için üye girişi yapın. Mevcut hesabınla uygulamaya giriş yapabilirsin." FontAttributes="Italic" FontSize="18" TextColor="Black"></Label>
+                    <BoxView HeightRequest="15"></BoxView>
+                    <Entry Placeholder="E-posta" HeightRequest="50" ></Entry>
+                    <Entry Placeholder="Şifre" HeightRequest="50" ></Entry>
+                    <BoxView HeightRequest="15"></BoxView>
+                    <Button Text="GİRİŞ YAP" BackgroundColor="#1AC4D7" TextColor="White" Padding="0,0,250,0" FontSize="18" FontAttributes="Bold" TextTransform="None" CornerRadius="10"></Button>
+                    <BoxView HeightRequest="3"></BoxView>
+                    <Button Text="Şifremi Unuttum" BackgroundColor="White" TextColor="Black"  FontSize="18"  TextTransform="None" CornerRadius="10"></Button>
+                    <BoxView HeightRequest="30"></BoxView>
+                    <Label Text="                    Henüz Üye Olmadıysan" TextColor="Black" TextTransform="None" FontAttributes="Bold" FontSize="18"></Label>
+                    <Label Text="  Sipariş takibi, kolay iade ve daha fazlası için bir" TextColor="Black" FontSize="16" ></Label>
+                    <Label Text="                                hesap oluştur." TextColor="Black" FontSize="16" ></Label>
+                        <Button BorderWidth="1" BorderColor="#1AC4D7" Text="ÜYE OL" BackgroundColor="White" TextColor="#1AC4D7" Padding="0,0,275,0" FontSize="18" FontAttributes="Bold" TextTransform="None" CornerRadius="10"></Button>
+                    </StackLayout>
+            </Grid>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
