@@ -121,13 +121,29 @@ namespace OOP_proje.Views
             Navigation.PushModalAsync(new DetailPage(e.Item as Entity));
         }
 
-        private  async void mvs_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MeyveVeSebze());
-        }
         private async void icecek_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Icecek());
+        }
+        private async void meyve_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MeyveVeSebze());
+        }
+        private async void mutfak_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Mutfak());
+        }
+        private async void unlu_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UnluMamuller());
+        }
+        private async void atistirmalik_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Atistirmalik());
+        }
+        private async void et_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EtTavuk());
         }
     }
 }

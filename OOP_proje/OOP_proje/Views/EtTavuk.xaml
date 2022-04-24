@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OOP_proje.Views.Icecek">
+             x:Class="OOP_proje.Views.EtTavuk">
     <Shell.TitleView>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Text="İçecekler" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" TextColor="Black"></Label>
+            <Label Grid.Column="0" Text="Et Tavuk ve Balık" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" TextColor="Black"></Label>
         </Grid>
     </Shell.TitleView>
     <ContentPage.Content>
@@ -28,12 +28,12 @@
                             <Button Text="Aldın Aldın  17 Mart" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Elektronik Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Aldın Aldın Geçtiğimiz Haftalar" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                            <Button Clicked="icecek_Clicked" Text="İçecek" BackgroundColor="#1AC4D7" TextColor="White" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                            <Button Clicked="icecek_Clicked" Text="İçecek" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Çok Al Az Öde" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Clicked="atistirmalik_Clicked" Text="Atıştırmalık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Gıda Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Süt Ürünleri ve Kahvaltılık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                            <Button Clicked="et_Clicked" Text="Et,Tavuk ve Balık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                            <Button Clicked="et_Clicked" Text="Et,Tavuk ve Balık" BackgroundColor="#1AC4D7" TextColor="White" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Dondurulmuş ve Hazır Yemek" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Dondurma" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Temizlik Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
@@ -51,13 +51,9 @@
             <ScrollView Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal">
                     <BoxView WidthRequest="10"></BoxView>
-                    <Button Clicked="suBtn_Clicked"  x:Name="suBtn" Text="Su ve Maden Suyu" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                    <Button Clicked="gazliBtn_Clicked" x:Name="gazliBtn" Text="Gazlı İçecekler" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                    <Button Clicked="gazsizBtn_Clicked" x:Name="gazsizBtn" Text="Gazsız İçecekler" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                    <Button Text="Ayran ve Kefir " BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                    <Button Text="Meyve Suyu" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                    <Button Text="Çay" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                    <Button Text="Kahve" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                    <Button Clicked="beyazBtn_Clicked"  x:Name="beyaazBtn" Text="Beyaz Et" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                    <Button Clicked="kirmiziBtn_Clicked" x:Name="kirmiziBtn" Text="Kırmızı Et" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                    <Button Clicked="denizBtn_Clicked" x:Name="denizBtn" Text="Deniz Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                 </StackLayout>
             </ScrollView>
             <Label Text="27 ürün gösteriliyor" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title"></Label>

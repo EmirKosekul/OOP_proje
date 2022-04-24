@@ -8,7 +8,7 @@
                 <ColumnDefinition Width="5*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Text="Meyve ve Sebze" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" TextColor="Black"></Label>
+            <Label Grid.Column="0" Text="Unlu Mamüller" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" TextColor="Black"></Label>
         </Grid>
     </Shell.TitleView>
     <ContentPage.Content>
@@ -24,16 +24,16 @@
                             <BoxView WidthRequest="10"></BoxView>
                             <Button Clicked="meyve_Clicked" Text="Meyve ve Sebze" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Haftanın Yıldızları" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                            <Button Text="Unlu Mamuller ve Pastane" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                            <Button Clicked="unlu_Clicked" Text="Unlu Mamuller ve Pastane" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Aldın Aldın  17 Mart" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Elektronik Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Aldın Aldın Geçtiğimiz Haftalar" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Clicked="icecek_Clicked" Text="İçecek" BackgroundColor="#1AC4D7" TextColor="White" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Çok Al Az Öde" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                            <Button Text="Atıştırmalık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                            <Button Clicked="atistirmalik_Clicked" Text="Atıştırmalık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Gıda Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Süt Ürünleri ve Kahvaltılık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                            <Button Text="Et,Tavuk ve Balık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                            <Button Clicked="et_Clicked" Text="Et,Tavuk ve Balık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Dondurulmuş ve Hazır Yemek" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Dondurma" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Temizlik Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>

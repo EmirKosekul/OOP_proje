@@ -33,5 +33,13 @@ namespace OOP_proje.Views
         {
             await Navigation.PushAsync(new UnluMamuller());
         }
+        private async void Atistirmalik_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Atistirmalik());
+        }
+        private async void Et_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EtTavuk());
+        }
     }
 }

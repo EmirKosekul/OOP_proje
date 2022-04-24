@@ -39,6 +39,12 @@
             <Style TargetType="local:UnluMamuller">
                 <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
             </Style>
+            <Style TargetType="local:Atistirmalik">
+                <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
+            </Style>
+            <Style TargetType="local:EtTavuk">
+                <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
+            </Style>
             <Style TargetType="local:Ara">
                 <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
             </Style>

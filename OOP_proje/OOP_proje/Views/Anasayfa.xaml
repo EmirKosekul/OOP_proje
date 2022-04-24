@@ -107,11 +107,11 @@
                             <Label Text="Geçtiğimiz Hafta" Padding="10,0,0,0"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White">
-                            <ImageButton  Source="atistirmalik.jpg" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Clicked="Domates_Clicked"></ImageButton>
+                            <ImageButton  Source="atistirmalik.jpg" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Clicked="Atistirmalik_Clicked"></ImageButton>
                             <Label Text="Atıştırmalık" Padding="10,0,0,0"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White">
-                            <ImageButton  Source="et.jpg" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Clicked="Domates_Clicked"></ImageButton>
+                            <ImageButton  Source="et.jpg" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Clicked="Et_Clicked"></ImageButton>
                             <Label Text="Et, Tavuk ve Balık" Padding="10,0,0,0"></Label>
                         </StackLayout>
                         <StackLayout BackgroundColor="White">
