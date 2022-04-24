@@ -13,7 +13,7 @@ namespace OOP_proje.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetailPage : ContentPage
     {
-        public DetailPage(MeyveVeSebzeNesne mvs)
+        public DetailPage(Entity mvs)
         {
             InitializeComponent();
             foto.Source = mvs.Resimi;

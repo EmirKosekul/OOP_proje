@@ -13,35 +13,35 @@ namespace OOP_proje.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MeyveVeSebze : ContentPage
     {
-        List<MeyveVeSebzeNesne> meyveVeSebze1;
-        List<MeyveVeSebzeNesne> meyveVeSebze2;
-        List<MeyveVeSebzeNesne> meyve1 = new List<MeyveVeSebzeNesne> { };
-        List<MeyveVeSebzeNesne> meyve2 = new List<MeyveVeSebzeNesne> { };
-        List<MeyveVeSebzeNesne> sebze1 = new List<MeyveVeSebzeNesne> { };
-        List<MeyveVeSebzeNesne> sebze2 = new List<MeyveVeSebzeNesne> { };
-        List<MeyveVeSebzeNesne> yesillik1 = new List<MeyveVeSebzeNesne> { };
-        List<MeyveVeSebzeNesne> yesillik2 = new List<MeyveVeSebzeNesne> { };
+        List<Entity> meyveVeSebze1;
+        List<Entity> meyveVeSebze2;
+        List<Entity> meyve1 = new List<Entity> { };
+        List<Entity> meyve2 = new List<Entity> { };
+        List<Entity> sebze1 = new List<Entity> { };
+        List<Entity> sebze2 = new List<Entity> { };
+        List<Entity> yesillik1 = new List<Entity> { };
+        List<Entity> yesillik2 = new List<Entity> { };
         public MeyveVeSebze()
         {
             InitializeComponent();
-            meyveVeSebze1 = new List<MeyveVeSebzeNesne> {
-             new MeyveVeSebzeNesne{Adi="Domates", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Sebze" , Navigationpage="Domates"},
-             new MeyveVeSebzeNesne{Adi="Soğan", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Sebze"},
-             new MeyveVeSebzeNesne{Adi="Portakal", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Meyve",Navigationpage="Portakal"},             
-             new MeyveVeSebzeNesne{Adi="Maydonoz", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Yeşillik"},
+            meyveVeSebze1 = new List<Entity> {
+             new Entity{Adi="Domates", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Sebze" , Navigationpage="Domates"},
+             new Entity{Adi="Soğan", Fiyati=19.5, Resimi="sogan.jpg", Tagi="Sebze"},
+             new Entity{Adi="Portakal", Fiyati=19.5, Resimi="portakal.jpg", Tagi="Meyve",Navigationpage="Portakal"},             
+             new Entity{Adi="Maydonoz", Fiyati=19.5, Resimi="maydonoz.jpg", Tagi="Yeşillik"},
             };
-            meyveVeSebze2 = new List<MeyveVeSebzeNesne> {
-            new MeyveVeSebzeNesne{Adi="Salatalık", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Sebze"},
-             new MeyveVeSebzeNesne{Adi="Kıvırcık", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Yeşillik"},
-             new MeyveVeSebzeNesne{Adi="Nane", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Yeşillik"},
-             new MeyveVeSebzeNesne{Adi="Muz", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Meyve" }
+            meyveVeSebze2 = new List<Entity> {
+            new Entity{Adi="Salatalık", Fiyati=19.5, Resimi="salatalik.jpg", Tagi="Sebze"},
+             new Entity{Adi="Kıvırcık", Fiyati=19.5, Resimi="kivircik.jpg", Tagi="Yeşillik"},
+             new Entity{Adi="Nane", Fiyati=19.5, Resimi="nane.jpg", Tagi="Yeşillik"},
+             new Entity{Adi="Muz", Fiyati=19.5, Resimi="muz.jpg", Tagi="Meyve" }
             };
-            meyve1 = new List<MeyveVeSebzeNesne> { };
-            meyve2 = new List<MeyveVeSebzeNesne> { };
-            sebze1 = new List<MeyveVeSebzeNesne> { };
-            sebze2 = new List<MeyveVeSebzeNesne> { };
-            yesillik1 = new List<MeyveVeSebzeNesne> { };
-            yesillik2 = new List<MeyveVeSebzeNesne> { };
+            meyve1 = new List<Entity> { };
+            meyve2 = new List<Entity> { };
+            sebze1 = new List<Entity> { };
+            sebze2 = new List<Entity> { };
+            yesillik1 = new List<Entity> { };
+            yesillik2 = new List<Entity> { };
 
             foreach (var item in meyveVeSebze1)
             {
@@ -110,7 +110,7 @@ namespace OOP_proje.Views
             {
                 return;
             }
-            Navigation.PushModalAsync(new DetailPage(e.Item as MeyveVeSebzeNesne));
+            Navigation.PushModalAsync(new DetailPage(e.Item as Entity));
         }
         private void lst2_ItemTapped(object sender, ItemTappedEventArgs e)
         {
@@ -118,12 +118,16 @@ namespace OOP_proje.Views
             {
                 return;
             }
-            Navigation.PushModalAsync(new DetailPage(e.Item as MeyveVeSebzeNesne));
+            Navigation.PushModalAsync(new DetailPage(e.Item as Entity));
         }
 
         private  async void mvs_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MeyveVeSebze());
+        }
+        private async void icecek_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Icecek());
         }
     }
 }

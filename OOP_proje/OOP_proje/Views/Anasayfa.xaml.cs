@@ -21,10 +21,17 @@ namespace OOP_proje.Views
         {
             await Navigation.PushAsync(new MeyveVeSebze());
         }
-
-        private async void ImageButton_Clicked(object sender, EventArgs e)
+        private async void Icecek_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Deneme());
+            await Navigation.PushAsync(new Icecek());
+        }
+        private async void Mutfak_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Mutfak());
+        }
+        private async void UnluMamuller_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UnluMamuller());
         }
     }
 }

@@ -30,6 +30,15 @@
             <Style TargetType="local:MeyveVeSebze">
                 <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
             </Style>
+            <Style TargetType="local:Icecek">
+                <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
+            </Style>
+            <Style TargetType="local:Mutfak">
+                <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
+            </Style>
+            <Style TargetType="local:UnluMamuller">
+                <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
+            </Style>
             <Style TargetType="local:Ara">
                 <Setter Property="BackgroundColor" Value="#E8EBEC"></Setter>
             </Style>

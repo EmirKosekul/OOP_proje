@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP_proje.Models
 {
-    public class MeyveVeSebzeNesne
+    public class Entity
     {
         public string Adi { get; set; }
         public double Fiyati { get; set; }
