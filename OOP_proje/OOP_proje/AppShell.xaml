@@ -57,7 +57,7 @@
         <ShellContent Title="Anasayfa" Icon="home.png" Route="AboutPage" ContentTemplate="{DataTemplate local:Anasayfa}" />
         <ShellContent Title="Ara" Icon="search.png" ContentTemplate="{DataTemplate local:Ara}" />
         <ShellContent Title="Hesabım" Icon="user.png" ContentTemplate="{DataTemplate local:Hesabim}" />
-        <ShellContent Title="Kampanyalar" Icon="trumpet.png" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Kampanyalar" Icon="trumpet.png" ContentTemplate="{DataTemplate local:Kampanyalar}" />
     </TabBar>
 
     <!--

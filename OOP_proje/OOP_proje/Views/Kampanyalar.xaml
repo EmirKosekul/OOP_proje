@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP_proje.Views.Kampanyalar">
+    <Shell.TitleView>
+        <Image Source="a101kapida.png" ></Image>
+    </Shell.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="k1.jpg"></Image>
+                <Image Source="k2.jpg"></Image>
+                <Image Source="k3.jpg"></Image>
+                <Image Source="k4.jpg"></Image>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

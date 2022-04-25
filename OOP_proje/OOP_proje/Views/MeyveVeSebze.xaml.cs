@@ -25,16 +25,16 @@ namespace OOP_proje.Views
         {
             InitializeComponent();
             meyveVeSebze1 = new List<Entity> {
-             new Entity{Adi="Domates", Fiyati=19.5, Resimi="Domates.jpg", Tagi="Sebze" , Navigationpage="Domates"},
+             new Entity{Adi="Domates", Fiyati=17.5, Resimi="Domates.jpg", Tagi="Sebze" , Navigationpage="Domates"},
              new Entity{Adi="Soğan", Fiyati=19.5, Resimi="sogan.jpg", Tagi="Sebze"},
-             new Entity{Adi="Portakal", Fiyati=19.5, Resimi="portakal.jpg", Tagi="Meyve",Navigationpage="Portakal"},             
+             new Entity{Adi="Portakal", Fiyati=18.5, Resimi="portakal.jpg", Tagi="Meyve",Navigationpage="Portakal"},             
              new Entity{Adi="Maydonoz", Fiyati=19.5, Resimi="maydonoz.jpg", Tagi="Yeşillik"},
             };
             meyveVeSebze2 = new List<Entity> {
-            new Entity{Adi="Salatalık", Fiyati=19.5, Resimi="salatalik.jpg", Tagi="Sebze"},
-             new Entity{Adi="Kıvırcık", Fiyati=19.5, Resimi="kivircik.jpg", Tagi="Yeşillik"},
+            new Entity{Adi="Salatalık", Fiyati=9.5, Resimi="salatalik.jpg", Tagi="Sebze"},
+             new Entity{Adi="Kıvırcık", Fiyati=1.5, Resimi="kivircik.jpg", Tagi="Yeşillik"},
              new Entity{Adi="Nane", Fiyati=19.5, Resimi="nane.jpg", Tagi="Yeşillik"},
-             new Entity{Adi="Muz", Fiyati=19.5, Resimi="muz.jpg", Tagi="Meyve" }
+             new Entity{Adi="Muz", Fiyati=11.5, Resimi="muz.jpg", Tagi="Meyve" }
             };
             meyve1 = new List<Entity> { };
             meyve2 = new List<Entity> { };
@@ -42,7 +42,7 @@ namespace OOP_proje.Views
             sebze2 = new List<Entity> { };
             yesillik1 = new List<Entity> { };
             yesillik2 = new List<Entity> { };
-
+            
             foreach (var item in meyveVeSebze1)
             {
                 if (item.Tagi == "Meyve")

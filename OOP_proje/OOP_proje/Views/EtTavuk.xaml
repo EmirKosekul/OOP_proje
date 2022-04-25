@@ -56,7 +56,7 @@
                     <Button Clicked="denizBtn_Clicked" x:Name="denizBtn" Text="Deniz Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                 </StackLayout>
             </ScrollView>
-            <Label Text="27 ürün gösteriliyor" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title"></Label>
+            
             <ScrollView VerticalScrollBarVisibility="Never" >
                 <Grid>
                     <Grid.ColumnDefinitions>

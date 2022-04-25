@@ -8,27 +8,13 @@
     <ContentPage.Content>
         <ScrollView HeightRequest="1000">
             <StackLayout>
-                <StackLayout BackgroundColor="White" HeightRequest="250">
-                    <BoxView BackgroundColor="White" HeightRequest="10"></BoxView>
-                    <Label Text="    Merhaba" FontSize="26" FontAttributes="Bold"  TextColor="Black"></Label>
-                    <BoxView BackgroundColor="White" HeightRequest="5"></BoxView>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="9*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Label Grid.Column="1" Text="Alışverişe hemen başlayabilmek için giriş yap. Yüzlerce ürün siparişin için seni bekliyor." FontSize="16" TextColor="Black"></Label>
-                    </Grid>
-                    <BoxView BackgroundColor="White" HeightRequest="25"></BoxView>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="4*"></ColumnDefinition>
-                            <ColumnDefinition Width="5*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="1" Text="Giriş yap / Üye ol" FontAttributes="Bold" FontSize="18" TextTransform="None" BackgroundColor="#1AC4D7" TextColor="White" CornerRadius="10"></Button>
-                    </Grid>
-                </StackLayout>
+                <CarouselView x:Name="kaydirma" HeightRequest="100">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding foto}"></Image>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.1*"></ColumnDefinition>

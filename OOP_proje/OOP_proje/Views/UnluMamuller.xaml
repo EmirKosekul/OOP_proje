@@ -24,11 +24,11 @@
                             <BoxView WidthRequest="10"></BoxView>
                             <Button Clicked="meyve_Clicked" Text="Meyve ve Sebze" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Haftanın Yıldızları" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                            <Button Clicked="unlu_Clicked" Text="Unlu Mamuller ve Pastane" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                            <Button Clicked="unlu_Clicked" Text="Unlu Mamuller ve Pastane" BackgroundColor="#1AC4D7" TextColor="White" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Aldın Aldın  17 Mart" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Elektronik Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Aldın Aldın Geçtiğimiz Haftalar" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
-                            <Button Clicked="icecek_Clicked" Text="İçecek" BackgroundColor="#1AC4D7" TextColor="White" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
+                            <Button Clicked="icecek_Clicked" Text="İçecek" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Çok Al Az Öde" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Clicked="atistirmalik_Clicked" Text="Atıştırmalık" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
                             <Button Text="Gıda Ürünleri" BackgroundColor="White" TextColor="Gray" BorderColor="Gray" BorderWidth="1" CornerRadius="10"></Button>
